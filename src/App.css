@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5fb;
+  color: #18243b;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+}
+
+.welcome-screen,
+.login-screen,
+.assessment-screen {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  min-height: 650px;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 10px 40px #17255412;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: #2448b5;
+  color: white;
+  font-size: 38px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+}
+
+.welcome-screen {
+  text-align: center;
+}
+
+.welcome-screen h1,
+.login-screen h1 {
+  color: #2448b5;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.welcome-subtitle,
+.section-description {
+  color: #8994a8;
+  font-size: 14px;
+}
+
+.welcome-illustration {
+  background: #eef3ff;
+  border-radius: 20px;
+  margin: 35px 0;
+  min-height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hospital,
+.cloud {
+  font-size: 37px;
+}
+
+.connection {
+  color: #2448b5;
+  font-size: 26px;
+}
+
+.welcome-screen h2 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.welcome-description {
+  color: #7e899d;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.welcome-features {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.welcome-features div {
+  background: #f0f4ff;
+  color: #3452a0;
+  border-radius: 20px;
+  padding: 9px;
+  font-size: 11px;
+}
+
+.primary-btn {
+  width: 100%;
+  background: #2448b5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 17px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #18388f;
+}
+
+.footer-text {
+  margin-top: 25px;
+  color: #a0a9b8;
+  font-size: 12px;
+}
+
+.back-btn {
+  border: none;
+  background: transparent;
+  color: #2448b5;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.login-screen {
+  text-align: center;
+}
+
+.login-screen .logo {
+  margin-bottom: 20px;
+}
+
+.role-selection {
+  display: flex;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.role {
+  flex: 1;
+  padding: 15px 8px;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  background: white;
+  color: #65728a;
+}
+
+.active-role {
+  border: 2px solid #2448b5;
+  background: #eef3ff;
+  color: #2448b5;
+}
+
+.login-screen form {
+  text-align: left;
+}
+
+.login-screen form > label,
+.assessment-form > label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 18px 0 9px;
+}
+
+.login-screen form > input,
+.assessment-form > input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e0e5ed;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-screen input:focus,
+.assessment-form input:focus {
+  border-color: #2448b5;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  font-size: 11px;
+  color: #2448b5;
+  gap: 8px;
+}
+
+.remember {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #65728a;
+}
+
+.signup-text {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #7e899d;
+}
+
+.signup-text strong {
+  color: #2448b5;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #eaf0ff;
+  color: #2448b5;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.doctor-info h3 {
+  font-size: 14px;
+}
+
+.doctor-info p {
+  color: #8a95a8;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.logout-btn {
+  border: none;
+  background: #eef3ff;
+  color: #2448b5;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.assessment-heading p {
+  color: #75839a;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.assessment-heading h1 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+.assessment-heading span {
+  color: #8994a8;
+  font-size: 12px;
+}
+
+.assessment-form {
+  margin-top: 30px;
+}
+
+.demo-notice {
+  background: #eef3ff;
+  color: #365394;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.result-card {
+  border: 1px solid #e1e6ef;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.result-card h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.result-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.positive {
+  background: #e5f8ef;
+  color: #23966d;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.result-content strong {
+  color: #2448b5;
+  font-size: 30px;
+}
+
+.result-card > p {
+  color: #8994a8;
+  font-size: 11px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.research-notice {
+  display: flex;
+  gap: 10px;
+  background: #f5f7fa;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #7d899b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #edf0f4;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.bottom-nav button {
+  background: transparent;
+  border: none;
+  color: #8994a8;
+  font-size: 12px;
+}
+
+.bottom-nav .nav-active {
+  color: #2448b5;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .welcome-screen,
+  .login-screen,
+  .assessment-screen {
+    padding: 24px 18px;
+    min-height: 600px;
+  }
+}
